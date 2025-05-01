@@ -1,0 +1,52 @@
+@import 'tailwindcss';
+
+body {
+  color: #d0f7a2;
+  background: linear-gradient(to bottom, #070446 0%, #040328 90%, #070762 100%);
+  min-height: 100vh;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.tracking {
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+@layer components {
+  .nav {
+    @apply max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center;
+  }
+
+  .button {
+    @apply bg-[#9FFF2E] rounded-tl-full rounded-br-full text-blue-950 text-center self-center px-10 py-2 m-2 font-bold
+    transform transition-all duration-300 ease-in-out 
+    hover:bg-[#d0f7a2] hover:shadow-lg;
+  }
+
+  .button-reverse {
+    @apply bg-[#9FFF2E] rounded-tr-full rounded-bl-full text-blue-950 text-center self-center px-10 py-2 m-2 font-bold
+    transform transition-all duration-300 ease-in-out 
+    hover:bg-[#d0f7a2] hover:shadow-lg;
+  }
+
+  .button-square {
+    letter-spacing: 4px;
+  }
+
+  .footer {
+    @apply max-w-0.5;
+  }
+
+  .quiz {
+    @apply max-w-0.5;
+  }
+
+  .greatwalk {
+    @apply max-w-0.5;
+  }
+
+  .allgreatwalks {
+    @apply max-w-0.5;
+  }
+}
